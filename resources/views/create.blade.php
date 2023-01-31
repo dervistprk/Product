@@ -30,17 +30,18 @@
           <div class="form-group">
               @csrf
               <label for="isim">Ürün Adı</label>
-              <input type="text" class="form-control" name="isim"/>
+              <input type="text" class="form-control" name="isim" id="isim"/>
           </div>
           <div class="form-group">
               <label for="kategori">Kategori</label>
-              <input type="kategori" class="form-control" name="kategori"/>
+              <input type="text" class="form-control" name="kategori" id="kategori"/>
           </div>
           <div class="form-group">
               <label for="adet">Adet</label>
-              <input type="adet" class="form-control" name="adet"/>
+              <input type="number" class="form-control" name="adet" id="adet"/>
           </div>
-          <button type="submit" class="btn btn-block btn-danger">Ürün Ekle</button>
+          <button type="submit" class="btn btn-block btn-success">Ürün Ekle</button>
+          <a href="{{ route('products.index') }}" class="btn btn-block btn-danger">Vazgeç</a>
       </form>
   </div>
 </div>
